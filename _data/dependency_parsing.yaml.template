@@ -1,0 +1,85 @@
+Penn_Treebank:
+- &DozatManning2017
+  model:       Deep Biaffine
+  POS:         97.3
+  UAS:         95.44
+  LAS:         93.76
+  arxiv_id:    '1611.01734'
+  code:
+  - name:      Official
+    url:       https://github.com/tdozat/Parser-v1
+-
+  model:       jPTDP
+  POS:         97.97
+  UAS:         94.51
+  LAS:         92.87
+  arxiv_id:    '1807.03955'
+  code:
+  - name:      Official
+    url:       https://github.com/datquocnguyen/jPTDP
+-
+  model:       ''
+  POS:         97.44
+  UAS:         94.61
+  LAS:         92.79
+  arxiv_id:    '1603.06042'
+  code:        []
+- model:       Distilled neural FOG
+  POS:         97.3
+  UAS:         94.26
+  LAS:         92.06
+  arxiv_id:    '1609.07561'
+  code:        []
+-
+  model:       ''
+  POS:         97.44
+  UAS:         93.99
+  LAS:         92.05
+  arxiv_id:    '1506.06158'
+  code:        []
+-
+  model:       BIST transition-based parser
+  POS:         97.3
+  UAS:         93.9
+  LAS:         91.9
+  arxiv_id:    '1603.04351'
+  code:
+  - name:      Official
+    url:       https://github.com/elikip/bist-parser/tree/master/barchybrid/src
+-
+  model:       Arc-hybrid
+  POS:         97.3
+  UAS:         93.56
+  LAS:         91.42
+  arxiv_id:    '1603.03793'
+  code:        []
+-
+  model:       BIST graph-based parser
+  POS:         97.3
+  UAS:         93.1
+  LAS:         91.0
+  arxiv_id:    '1603.04351'
+  code:
+  - name:      Official
+    url:       https://github.com/elikip/bist-parser/tree/master/bmstparser/src
+
+Reference:
+-
+  model:       Stack-only RNNG
+  UAS:         95.8
+  LAS:         94.6
+  arxiv_id:    '1611.05774'
+  code:        []
+  comment:     Constituent parser
+-
+  model:       Semi-supervised LSTM-LM
+  UAS:         95.9
+  LAS:         94.1
+  sems_id:     515a46276c817adca3ad614405e04da3842a9a80
+  url:         http://www.aclweb.org/anthology/D16-1257
+  code:        []
+  comment:     Constituent parser
+- <<:          *DozatManning2017
+  UAS:         95.66
+  LAS:         94.03
+  comment:     Stanford conversion **v3.5.0**

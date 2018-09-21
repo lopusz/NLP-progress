@@ -1,2 +1,5 @@
 _site/
 Gemfile*
+_env/conda
+_env/conda_env
+_data/gener_yaml.cache.jsonl
